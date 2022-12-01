@@ -10,12 +10,12 @@ public class CompradorDTO {
     private String nombre;
     private String apellido;
     private String direccion;
-    private String dni;
+    private int dni;
 
     public CompradorDTO() {
     }
 
-    public CompradorDTO(String nombre, String apellido, String direccion, String dni) {
+    public CompradorDTO(String nombre, String apellido, String direccion, int dni) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;

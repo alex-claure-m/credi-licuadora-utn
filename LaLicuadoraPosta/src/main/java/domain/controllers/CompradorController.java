@@ -10,13 +10,14 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.webmvc.RepositoryRestController;
 import org.springframework.web.bind.annotation.*;
 
-@Data
+
 @RestController
 @RequestMapping("/comprador")
 @AllArgsConstructor
 public class CompradorController {
+/*
     private CompradorService compradorService;
-     private CompradorMapper compradorModel;
+    private CompradorMapper compradorModel;
 
 
     @PostMapping()
@@ -25,4 +26,5 @@ public class CompradorController {
     }
 
 
+*/
 }

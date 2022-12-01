@@ -20,7 +20,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.sacavix.todoapp.controller"))
+                .apis(RequestHandlerSelectors.basePackage("domain.controller")) // pasarle la direccion de controllers
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());
