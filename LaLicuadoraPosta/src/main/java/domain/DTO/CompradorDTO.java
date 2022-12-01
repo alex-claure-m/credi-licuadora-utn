@@ -1,7 +1,11 @@
 package domain.DTO;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+
+// permite mover datos sin necesidad de pasar los datos de TODA LA ENTIDAD A TODOS LOS LADOS
+
 
 @Getter
 @Setter

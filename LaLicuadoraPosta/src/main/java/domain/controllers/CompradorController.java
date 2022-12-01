@@ -19,7 +19,7 @@ public class CompradorController {
 
     @PostMapping()
     public Comprador agregarComprador(@RequestBody Comprador unComprador){
-        return compradorService.postComprador(unComprador);
+        return compradorService.crearComprador(unComprador);
     }
 
 

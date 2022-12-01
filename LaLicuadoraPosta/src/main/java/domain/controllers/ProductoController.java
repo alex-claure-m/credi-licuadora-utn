@@ -1,7 +1,9 @@
 package domain.controllers;
 
 
+import domain.DTO.AreaTipoPersonalizableDTO;
 import domain.DTO.ProductoDTO;
+import domain.model.entities.producto.AreaTipoPersonalizable;
 import domain.model.entities.producto.Producto;
 import domain.repositories.RepoAreaTipoPersonalizable;
 import domain.repositories.RepoProductoBase;
@@ -14,18 +16,18 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+import java.util.stream.Collectors;
 
 
 @RestController
 @RequestMapping("/producto")
 public class ProductoController {
-/*
+
     @Autowired
     RepoProductoBase repoProductoBase;
 
-    // @Autowired
-   // RepoAreaTipoPersonalizable repoAreaTipoPersonalizable;
+    @Autowired
+    RepoAreaTipoPersonalizable repoAreaTipoPersonalizable;
 
 
     @Transactional
@@ -43,17 +45,22 @@ public class ProductoController {
     @Transactional
     @PostMapping("/producto")
     public @ResponseBody ResponseEntity<Object> crearProducto(@RequestBody ProductoDTO unProductoDTO){
+        List<AreaTipoPersonalizableDTO> listaAreaTipoPersonalizableDTO = unProductoDTO.getAreaPersonalizable();
 
-    }
-*/
-/*
+        List<Long> areasPersonalizablesID = listaAreaTipoPersonalizableDTO.stream().map(unArea -> unArea.getId()).collect(Collectors.toList());
+       // List<Optional<>> areaPersonizadasQueFueronIngresadas = listaAreaTipoPersonalizableDTO.stream().map(unAreaDTO -> unAreaDTO.getTiposDePersonalizacionesId()).collect(Collectors.toList());
+
+
+
+
+
     @GetMapping("/producto")
     public List<Producto> productos(){
         List<Producto>productos = new ArrayList<>();
         return productos;
     }
 
+*/
 
- */
 }
 
