@@ -11,7 +11,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.3</version>
+        <version>2.5.8</version>  <!-- version 2.7.3 x defecto - se lo cambio debido a swagger-->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -144,6 +144,26 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
+
+        <!-- DEPENDENCIA SWAGGER FOX -> PERMITE LA DOCUMENTACION DE LA API -->
+
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <!-- FIN DEPENDECIA SWAGGER FOX -->
+
+
+        <!-- DEPENDECIA SWAGGER UI - PARA VER EN LA INTERFAZ DEL USUARIO UNA VEZ QUE RUN.APPLICATION -->
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>3.0.0</version>
+        </dependency>
 
 
     </dependencies>

@@ -17,10 +17,10 @@ import java.time.LocalDate;
 
 @SpringBootApplication
 public class AppRunAplicationCredicoop {
-
+/*
     @Autowired
     RepositoryRestConfiguration config;
-
+*/
 
     public static void main(String[] args) {
         SpringApplication.run(AppRunAplicationCredicoop.class,args);

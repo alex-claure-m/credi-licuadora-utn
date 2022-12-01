@@ -3,10 +3,12 @@ package domain.model.entities.servicio;
 import domain.model.entities.comprador.Comprador;
 import domain.repositories.RepoComprador;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Data
 @Service
 @AllArgsConstructor // para el private final , asi evito Constructor
 public class CompradorService {
@@ -15,7 +17,7 @@ public class CompradorService {
 
 
     //agrego al comprador desde el service
-    public Comprador postComprador(Comprador unComprador){
+    public Comprador crearComprador(Comprador unComprador){
         return repoComprador.save(unComprador);
     }
 

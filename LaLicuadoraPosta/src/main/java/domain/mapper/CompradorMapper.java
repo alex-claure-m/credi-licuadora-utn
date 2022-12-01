@@ -8,7 +8,7 @@ import org.modelmapper.ModelMapper;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+
 public class CompradorMapper {
     // el mapper para convertir de entidad a dto para la implementacion de microservicios puede servir
     // pero estosy en duda!
@@ -35,4 +35,4 @@ public class CompradorMapper {
 
 
 }
- */
+
