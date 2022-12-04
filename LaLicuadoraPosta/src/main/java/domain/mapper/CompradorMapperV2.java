@@ -4,6 +4,7 @@ import domain.DTO.CompradorDTO;
 import domain.model.entities.comprador.Comprador;
 import org.springframework.stereotype.Component;
 
+/*
 @Component
 public class CompradorMapperV2 implements IMapper<CompradorDTO, Comprador>{
 
@@ -18,3 +19,4 @@ public class CompradorMapperV2 implements IMapper<CompradorDTO, Comprador>{
         return unComprador;
     }
 }
+*/

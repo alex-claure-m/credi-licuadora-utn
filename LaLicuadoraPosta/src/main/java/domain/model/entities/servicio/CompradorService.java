@@ -32,7 +32,7 @@ public class CompradorService {
     //traigo al comprador desde el service
     public Comprador getComprador(Long id) throws Exception {
         Optional<Comprador> unComprador = repoComprador.findById(id);
-        if(unComprador.isPresent()){
+        if(!unComprador.isPresent()){
             throw new Exception("comprador inexistente");
         }
         return unComprador.get();

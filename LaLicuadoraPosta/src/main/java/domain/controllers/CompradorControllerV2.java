@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/compradores") // defino el endopoint
 @AllArgsConstructor
 public class CompradorControllerV2 {
-
+/*
     private final CompradorServiceV2 compradorServiceV2;
 
     @PostMapping
@@ -26,4 +26,7 @@ public class CompradorControllerV2 {
         // como ya tenemos el metodo en el compradorServiceV2.. lo implemento aca
         return this.compradorServiceV2.findAll();
     }
+
+
+*/
 }

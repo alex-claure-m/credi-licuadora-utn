@@ -4,18 +4,19 @@ package domain.mapper;
 import domain.DTO.CompradorDTO;
 import domain.model.entities.comprador.Comprador;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Component
 public class CompradorMapper {
     // el mapper para convertir de entidad a dto para la implementacion de microservicios puede servir
     // pero estosy en duda!
-    private ModelMapper compradorMapper;
+    private final ModelMapper compradorMapper;
 
-    public CompradorMapper(ModelMapper compradorMapper) {
-        this.compradorMapper = compradorMapper;
+    public CompradorMapper() {
+        this.compradorMapper = new ModelMapper();
     }
 
     public List<CompradorDTO> convertToDTOList(List<Comprador> compradorList){

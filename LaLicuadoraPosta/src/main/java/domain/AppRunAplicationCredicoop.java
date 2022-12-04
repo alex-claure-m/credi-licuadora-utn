@@ -5,6 +5,7 @@ import domain.model.entities.producto.TipoPersonalizacion;
 import domain.repositories.RepoComprador;
 import domain.repositories.RepoProductoBase;
 import domain.repositories.RepoTipoPersonalizacion;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -34,6 +35,9 @@ public class AppRunAplicationCredicoop {
             repoProdu.save(new Producto("almohada","almohada roja",100, LocalDate.now(),Boolean.TRUE));
         };
     }
-
 */
+    @Bean
+    public ModelMapper modelMapper(){
+        return new ModelMapper();
+    }
 }

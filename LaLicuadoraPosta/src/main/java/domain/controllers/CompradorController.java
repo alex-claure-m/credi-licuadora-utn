@@ -1,6 +1,7 @@
 package domain.controllers;
 
 //import domain.mapper.CompradorMapper;
+import domain.DTO.CompradorDTO;
 import domain.mapper.CompradorMapper;
 import domain.model.entities.comprador.Comprador;
 import domain.model.entities.servicio.CompradorService;
@@ -12,11 +13,12 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("/comprador")
+@RequestMapping("/api/comprador")
 @AllArgsConstructor
 public class CompradorController {
-/*
+
     private CompradorService compradorService;
+
     private CompradorMapper compradorModel;
 
 
@@ -25,6 +27,11 @@ public class CompradorController {
         return compradorService.crearComprador(unComprador);
     }
 
+    @GetMapping("{id}")
+    public CompradorDTO getComprador(@PathVariable("id") Long id) throws Exception {
+        Comprador unComprador = compradorService.getComprador(id);
+        return compradorModel.convertToDTO(unComprador);
+    }
 
-*/
+
 }

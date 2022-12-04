@@ -1,7 +1,7 @@
 package domain.model.entities.servicio;
 
 import domain.DTO.CompradorDTO;
-import domain.mapper.CompradorMapperV2;
+// import domain.mapper.CompradorMapperV2;
 import domain.model.entities.comprador.Comprador;
 import domain.repositories.RepoComprador;
 import lombok.AllArgsConstructor;
@@ -12,6 +12,7 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class CompradorServiceV2 {
+/*
     private final RepoComprador repoComprador;
     private final CompradorMapperV2 mapperV2;
 
@@ -23,4 +24,6 @@ public class CompradorServiceV2 {
     public List<Comprador> findAll(){
         return this.repoComprador.findAll();
     }
+
+*/
 }
